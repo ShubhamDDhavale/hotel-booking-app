@@ -12,6 +12,37 @@ dist
 dist-ssr
 *.local
 
+# Ignore Python cache, virtual environments, and database files
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+*.db
+*.sqlite
+alembic/versions/*.pyc
+instance/
+
+# Ignore FastAPI environment variables
+.env
+*.log
+
+# Ignore Node.js dependencies and build files
+node_modules/
+dist/
+build/
+*.lock
+
+# Ignore IDE and OS-specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignore coverage reports
+coverage/
+*.cover
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
