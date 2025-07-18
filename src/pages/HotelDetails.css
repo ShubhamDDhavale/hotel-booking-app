@@ -1,0 +1,191 @@
+.hotel-details {
+  padding: 2rem 0;
+}
+
+.hotel-details-header {
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.back-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: translateX(-4px);
+  color: #667eea;
+}
+
+.hotel-details-content {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hotel-hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.hotel-hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.hotel-emoji-large {
+  font-size: 6rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.hotel-hero-info h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+}
+
+.hotel-description-large {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.9;
+}
+
+.hotel-price-large {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.hotel-actions {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.book-now-btn {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.book-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.add-to-favorites-btn {
+  background: white;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-favorites-btn:hover {
+  background: #e74c3c;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.hotel-amenities {
+  padding: 2rem;
+}
+
+.hotel-amenities h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.amenity-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #2c3e50;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.amenity-item:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.not-found h2 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hotel-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .hotel-hero-info h1 {
+    font-size: 2rem;
+  }
+  
+  .hotel-actions {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+} 
